@@ -1,6 +1,6 @@
 #include "main.h"
 // #include"color_from_pair_no.c"
-// #include "pair_no_from_color.c"
+//  #include "pair_no_from_color.c"
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],

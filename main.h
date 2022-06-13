@@ -1,7 +1,7 @@
 #ifndef  MAIN_H
 #define  MAIN_H
 #include <assert.h>
-#include<stdio.h>
+#include <stdio.h>
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
@@ -23,4 +23,8 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
+ColorPair GetColorFromPairNumber(int pairNumber) ;
+void testNumberToPair(int pairNumber,enum MajorColor expectedMajor,enum MinorColor expectedMinor);
+int GetPairNumberFromColor(const ColorPair* colorPair);
+void testPairToNumber(enum MajorColor major,enum MinorColor minor,int expectedPairNumber);
 #endif
