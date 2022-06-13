@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include"main.h"
 #include"color_from_pair_no.c"
 #include "pair_no_from_color.c"
