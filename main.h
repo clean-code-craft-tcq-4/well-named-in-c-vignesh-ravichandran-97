@@ -21,5 +21,4 @@ typedef struct {
     enum MinorColor minorColor;
 } ColorPair;
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
-}
 #endif
