@@ -1,6 +1,18 @@
 #include "main.h"
  #include"color_from_pair_no.c"
  #include "pair_no_from_color.c"
+ const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
+int numberOfMajorColors =
+    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
+
+const int MAX_COLORPAIR_NAME_CHARS = 16;
+int numberOfMinorColors =
+    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
