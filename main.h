@@ -1,5 +1,5 @@
-#ifndef  MAIN_H
-#define  MAIN_H
+#ifndef  _MAIN_H
+#define  _MAIN_H
 #include <assert.h>
 #include <stdio.h>
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
