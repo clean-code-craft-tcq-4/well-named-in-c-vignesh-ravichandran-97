@@ -1,6 +1,6 @@
 #include "main.h"
- #include"color_from_pair_no.c"
- #include "pair_no_from_color.c"
+#include"color_from_pair_no.h"
+#include"pair_no_from_color.h"
  const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
 };
